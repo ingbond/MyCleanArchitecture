@@ -13,6 +13,7 @@ public class GetWeatherForecastsQueryHandler : RequestHandler<GetWeatherForecast
 
     protected override IEnumerable<WeatherForecast> Handle(GetWeatherForecastsQuery request)
     {
+        // TODO: call api for getting weather
         var rng = new Random();
 
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
